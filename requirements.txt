@@ -1,0 +1,5 @@
+Flask
+Flask-Cors
+openai==0.28
+python-dotenv
+gunicorn

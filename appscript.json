@@ -1,0 +1,45 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {},
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "addOns": {
+    "common": {
+      "name": "InSightMail",
+      "logoUrl": "https://drive.google.com/uc?export=view&id=1CmnnykXUIzbnuDXV73vPEjZptvcBtcpN",
+      "layoutProperties": {
+        "primaryColor": "#3A3F58",
+        "secondaryColor": "#2C2C2C"
+      }
+    },
+    "gmail": {
+      "contextualTriggers": [
+        {
+          "unconditional": {},
+          "onTriggerFunction": "showEmailActions"
+        }
+      ],
+      "homepageTrigger": {
+        "runFunction": "onHomepage"
+      }
+    }
+  },
+  "urlFetchWhitelist": [
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/summarize",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/actionItems",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/ask",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/respond",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/customRespond",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/generateFullResponse",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/improve",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/shorten",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/expand",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/regenerate",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/write",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/writeWithReference",
+    "https://ancient-chamber-92271-606ef689572e.herokuapp.com/phishingStatus"
+  ]
+}
